@@ -32,6 +32,10 @@ function mergeSort(arr){
         return arr 
     }
 
+
+    // const lArr = unsortedArr.splice(0, mid) // this mutates original array
+    // const rArr = unsortedArr
+
     const lArr = arr.slice(0, half)
     const rArr = arr.slice(half)
 
@@ -40,4 +44,4 @@ function mergeSort(arr){
     return merge(mergeSort(lArr), mergeSort(rArr))
 }
 
-console.log(mergeSort([2,1,2,1,,5,6,8,9,3,4,9,0]))
+console.log(mergeSort([2,1,2,1,5,6,8,9,3,4,9,0]))
