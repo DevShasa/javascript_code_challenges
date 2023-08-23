@@ -6,7 +6,7 @@ function bubbleSort(numberArr){
     let sorted =  false
     for(let y = 0; y < numberArr.length; y++){
         if(sorted) break
-        sorted =  true
+        sorted =  true // this flag will be set to false if array is not sorted
         for(let i = 0; i< numberArr.length; i++){
             if(numberArr[i] > numberArr[i +1]){
                 sorted = false
