@@ -1,8 +1,20 @@
 const arrayValues = [2,2,4,2,6,2]
 
+// Looping through arrays
 for(let i =0; i < arrayValues.length; i++){
     console.log(arrayValues[i])
 }
+// working with the values directly withiut bothering with the index
+// for of loop
+for(let x of arrayValues){
+  console.log(x)
+}
+
+// forEch loops through each array element once and accepts a callback
+// the current array item, index and the whole array are made available to each iteraction 
+arrayValues.forEach((item, index)=> console.log(`Item ${item} is at position ${index}`))
+
+
 // Alternative to looping
 console.log([2,2,4,2,3,2].some(x => x %2 === 1)) // some are odd
 console.log([2,2,4,2,8,2].every(x => x %2 === 0)) // Each one is odd
